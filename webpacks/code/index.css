@@ -1,0 +1,24 @@
+#boxMain{
+    display: grid;
+    grid-template-columns: 20% 79%;
+    grid-gap: 1%;
+}
+#main{
+    background-color: yellow;
+}
+#box  input, button{
+    padding: 10px;
+}
+#box{
+    padding: 10px;
+}
+.redcolor{
+    color: red;
+}
+#box1{
+    background-color: salmon;
+    width: 80%;
+    padding: 10px;
+    margin-left: 10%;
+    color: black;
+}

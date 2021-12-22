@@ -4,4 +4,4 @@ function add(x, y) {
 function mul(x, y) {
     return x * y;
 }
-export default add;
+export { add ,mul};
