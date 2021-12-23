@@ -8,7 +8,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" width={100}/>
-        
+        <h1>hello</h1>
         <h3>Mobile Operating System</h3>
         <ul className="list">
           {
