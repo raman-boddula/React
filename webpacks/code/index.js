@@ -1,36 +1,16 @@
+
 import {add,mul} from "./cal";
 
 import img from "../stickynotes.jpeg"
+import React from "react";
+import ReactDom  from "react-dom"
 
-<<<<<<< HEAD
-// import React from "react";
-// import ReactDom  from "react-dom"
-
-=======
->>>>>>> parent of 7ea159f (babel)
 import ("./index.css");
 
 console.log(add(3, 5))
 
 console.log(mul(10, 5));
 
-<<<<<<< HEAD
-// ReactDom.render(
-//     React.createElement("h1", { className: "redcolor" }, "hello from react"),
-//     document.getElementById("reactWith")
-// )
-// ReactDom.render(
-//     <h1 className="redcolor">
-//         webpack and {" "}
-//         <i className="test">
-//             React <b>JSX</b>
-//         </i>{" "}
-//     </h1>,
-//     document.getElementById("reactWith1")
-// )
-
-=======
->>>>>>> parent of 7ea159f (babel)
 const imagParent = document.getElementById('logo');
 let img1 = document.createElement('img');
 img1.src = img;
@@ -56,3 +36,16 @@ button.onclick = () => {
 div.append(input, button);
 document.getElementById("box").appendChild(div);
 document.getElementById("main").appendChild(h1);
+// ReactDom.render(
+//     React.createElement("h1", { className: "redcolor" }, "hello from react"),
+//     document.getElementById("reactWith")
+// )
+// ReactDom.render(
+//     <h1 className="redcolor">
+//         webpack and {" "}
+//         <i className="test">
+//             React <b>JSX</b>
+//         </i>{" "}
+//     </h1>,
+//     document.getElementById("reactWith1")
+// )

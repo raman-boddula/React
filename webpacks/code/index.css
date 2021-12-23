@@ -1,6 +1,6 @@
 @font-face {
     font-family: "Palanquin";
-    src: url('../blackjack.otf');
+    src: url('./blackjack.otf');
 }
 
 #boxMain{
