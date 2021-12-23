@@ -1,6 +1,6 @@
 import {add,mul} from "./cal";
 
-import img from "../download.png"
+import img from "../stickynotes.jpeg"
 
 import ("./index.css");
 
@@ -14,7 +14,7 @@ img1.src = img;
 imagParent.appendChild(img1)
 
 const h1 = document.createElement("h1");
-h1.innerText = "hellowebpack";
+h1.innerText = "Basic Sticky Notes";
 h1.classList.add("redcolor");
 const div = document.createElement("div");
 
@@ -26,7 +26,7 @@ button.onclick = () => {
     let value = document.getElementById('inputValue').value;
     // alert(value);
     let parent = document.getElementById("box1");
-    let header1 = document.createElement('p');
+    let header1 = document.createElement('h5');
     header1.textContent = value;
     parent.append(header1)
 }

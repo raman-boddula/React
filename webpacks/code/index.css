@@ -4,7 +4,8 @@
     grid-gap: 1%;
 }
 #main{
-    background-color: yellow;
+    background-color:silver;
+    text-align: center;
 }
 #box  input, button{
     padding: 10px;
@@ -16,9 +17,19 @@
     color: red;
 }
 #box1{
-    background-color: salmon;
+    display: grid;
+    grid-template-columns: repeat(4,25%);
+    grid-gap: 10px;
     width: 80%;
+    font-size: large;
+    font-family: cursive;
     padding: 10px;
     margin-left: 10%;
     color: black;
+}
+#box1 h5{
+    background-color: rgb(245, 245, 136);
+    height: 250px;
+    text-align: center;
+    padding:20px 10px 10px 10px;
 }

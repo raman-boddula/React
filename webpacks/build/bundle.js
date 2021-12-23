@@ -26,17 +26,17 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \***********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _cal__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./cal */ \"./code/cal.js\");\n/* harmony import */ var _download_png__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../download.png */ \"./download.png\");\n\n\n\n\n__webpack_require__.e(/*! import() */ \"code_index_css\").then(__webpack_require__.t.bind(__webpack_require__, /*! ./index.css */ \"./code/index.css\", 23));\n\nconsole.log((0,_cal__WEBPACK_IMPORTED_MODULE_0__.add)(3, 5))\n\nconsole.log((0,_cal__WEBPACK_IMPORTED_MODULE_0__.mul)(10, 5));\n\nconst imagParent = document.getElementById('logo');\nlet img1 = document.createElement('img');\nimg1.src = _download_png__WEBPACK_IMPORTED_MODULE_1__[\"default\"];\nimagParent.appendChild(img1)\n\nconst h1 = document.createElement(\"h1\");\nh1.innerText = \"hellowebpack\";\nh1.classList.add(\"redcolor\");\nconst div = document.createElement(\"div\");\n\nconst input = document.createElement(\"input\");\ninput.setAttribute(\"id\", \"inputValue\");\nconst button = document.createElement(\"button\");\nbutton.innerText = \"Add\";\nbutton.onclick = () => {\n    let value = document.getElementById('inputValue').value;\n    // alert(value);\n    let parent = document.getElementById(\"box1\");\n    let header1 = document.createElement('p');\n    header1.textContent = value;\n    parent.append(header1)\n}\ndiv.append(input, button);\ndocument.getElementById(\"box\").appendChild(div);\ndocument.getElementById(\"main\").appendChild(h1);\n\n//# sourceURL=webpack://webpacks/./code/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _cal__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./cal */ \"./code/cal.js\");\n/* harmony import */ var _stickynotes_jpeg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../stickynotes.jpeg */ \"./stickynotes.jpeg\");\n\n\n\n\n__webpack_require__.e(/*! import() */ \"code_index_css\").then(__webpack_require__.bind(__webpack_require__, /*! ./index.css */ \"./code/index.css\"));\n\nconsole.log((0,_cal__WEBPACK_IMPORTED_MODULE_0__.add)(3, 5))\n\nconsole.log((0,_cal__WEBPACK_IMPORTED_MODULE_0__.mul)(10, 5));\n\nconst imagParent = document.getElementById('logo');\nlet img1 = document.createElement('img');\nimg1.src = _stickynotes_jpeg__WEBPACK_IMPORTED_MODULE_1__[\"default\"];\nimagParent.appendChild(img1)\n\nconst h1 = document.createElement(\"h1\");\nh1.innerText = \"Basic Sticky Notes\";\nh1.classList.add(\"redcolor\");\nconst div = document.createElement(\"div\");\n\nconst input = document.createElement(\"input\");\ninput.setAttribute(\"id\", \"inputValue\");\nconst button = document.createElement(\"button\");\nbutton.innerText = \"Add\";\nbutton.onclick = () => {\n    let value = document.getElementById('inputValue').value;\n    // alert(value);\n    let parent = document.getElementById(\"box1\");\n    let header1 = document.createElement('h5');\n    header1.textContent = value;\n    parent.append(header1)\n}\ndiv.append(input, button);\ndocument.getElementById(\"box\").appendChild(div);\ndocument.getElementById(\"main\").appendChild(h1);\n\n//# sourceURL=webpack://webpacks/./code/index.js?");
 
 /***/ }),
 
-/***/ "./download.png":
-/*!**********************!*\
-  !*** ./download.png ***!
-  \**********************/
+/***/ "./stickynotes.jpeg":
+/*!**************************!*\
+  !*** ./stickynotes.jpeg ***!
+  \**************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"7be2b4998a328a0552454618c84e215d.png\");\n\n//# sourceURL=webpack://webpacks/./download.png?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"c8952e04d7ec49662a54ec604ecd80d5.jpeg\");\n\n//# sourceURL=webpack://webpacks/./stickynotes.jpeg?");
 
 /***/ })
 
@@ -54,7 +54,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /******/ 		}
 /******/ 		// Create a new module (and put it into the cache)
 /******/ 		var module = __webpack_module_cache__[moduleId] = {
-/******/ 			// no module.id needed
+/******/ 			id: moduleId,
 /******/ 			// no module.loaded needed
 /******/ 			exports: {}
 /******/ 		};
@@ -70,33 +70,15 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /******/ 	__webpack_require__.m = __webpack_modules__;
 /******/ 	
 /************************************************************************/
-/******/ 	/* webpack/runtime/create fake namespace object */
+/******/ 	/* webpack/runtime/compat get default export */
 /******/ 	(() => {
-/******/ 		var getProto = Object.getPrototypeOf ? (obj) => (Object.getPrototypeOf(obj)) : (obj) => (obj.__proto__);
-/******/ 		var leafPrototypes;
-/******/ 		// create a fake namespace object
-/******/ 		// mode & 1: value is a module id, require it
-/******/ 		// mode & 2: merge all properties of value into the ns
-/******/ 		// mode & 4: return value when already ns object
-/******/ 		// mode & 16: return value when it's Promise-like
-/******/ 		// mode & 8|1: behave like require
-/******/ 		__webpack_require__.t = function(value, mode) {
-/******/ 			if(mode & 1) value = this(value);
-/******/ 			if(mode & 8) return value;
-/******/ 			if(typeof value === 'object' && value) {
-/******/ 				if((mode & 4) && value.__esModule) return value;
-/******/ 				if((mode & 16) && typeof value.then === 'function') return value;
-/******/ 			}
-/******/ 			var ns = Object.create(null);
-/******/ 			__webpack_require__.r(ns);
-/******/ 			var def = {};
-/******/ 			leafPrototypes = leafPrototypes || [null, getProto({}), getProto([]), getProto(getProto)];
-/******/ 			for(var current = mode & 2 && value; typeof current == 'object' && !~leafPrototypes.indexOf(current); current = getProto(current)) {
-/******/ 				Object.getOwnPropertyNames(current).forEach((key) => (def[key] = () => (value[key])));
-/******/ 			}
-/******/ 			def['default'] = () => (value);
-/******/ 			__webpack_require__.d(ns, def);
-/******/ 			return ns;
+/******/ 		// getDefaultExport function for compatibility with non-harmony modules
+/******/ 		__webpack_require__.n = (module) => {
+/******/ 			var getter = module && module.__esModule ?
+/******/ 				() => (module['default']) :
+/******/ 				() => (module);
+/******/ 			__webpack_require__.d(getter, { a: getter });
+/******/ 			return getter;
 /******/ 		};
 /******/ 	})();
 /******/ 	
