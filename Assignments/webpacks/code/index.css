@@ -1,0 +1,40 @@
+@font-face {
+    font-family: "Palanquin";
+    src: url('./blackjack.otf');
+}
+
+#boxMain{
+    display: grid;
+    grid-template-columns: 20% 79%;
+    grid-gap: 1%;
+}
+#main{
+    background-color:silver;
+    text-align: center;
+}
+#box  input, button{
+    padding: 10px;
+}
+#box{
+    padding: 10px;
+}
+.redcolor{
+    color: red;
+}
+#box1{
+    display: grid;
+    grid-template-columns: repeat(4,25%);
+    grid-gap: 10px;
+    width: 80%;
+    font-size: large;
+    font-family: Palanquin;
+    padding: 10px;
+    margin-left: 10%;
+    color: black;
+}
+#box1 h5{
+    background-color: rgb(245, 245, 136);
+    height: 250px;
+    text-align: center;
+    padding:20px 10px 10px 10px;
+}
