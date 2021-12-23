@@ -31,7 +31,11 @@ module.exports = {
               name: "../fonts/[name].[ext]",
               limit:1000
         }
-      },
+        },
+        {
+          test: /\.js/,
+          use :["babel-loader"]
+          }
     ]
     },
 };
