@@ -1,15 +1,16 @@
 import React from "react";
 
-
-export default function Counter({initial}) {
-    const [counter, setCounter] = React.useState(initial);
-  const Addfunc = (value) => {
+export default function Counter({ initial })
+{
+  const [counter, setCounter] = React.useState(initial);
+  const Addfunc = (value) =>
+  {
     if (value === 2) { 
       setCounter(counter * value);
       return;
     }
         setCounter(counter + value);
-    }
+  }
 
   return (
     <div>
