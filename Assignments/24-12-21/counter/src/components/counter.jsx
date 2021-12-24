@@ -1,14 +1,16 @@
 import React from "react";
 
 
-export default function Counter() {
-    const [counter, setCounter] = React.useState(0);
-    const Addfunc = (value) => {
+export default function Counter({initial}) {
+    const [counter, setCounter] = React.useState(initial);
+  const Addfunc = (value) => {
+    if (value === 2) { 
+      setCounter(counter * value);
+      return;
+    }
         setCounter(counter + value);
     }
-    const Mulfunc = (value) => {
-     setCounter(counter*value)   
-    }
+
   return (
     <div>
           <h1>Counter</h1>  
@@ -17,7 +19,7 @@ export default function Counter() {
         &nbsp;<button onClick={()=>Addfunc(-1)}> <h1>&emsp; -&emsp; </h1> </button>  
           <div>Counter is { counter % 2===0 ? "Even" :"Odd"}</div>
       
-      <button onClick={()=>Mulfunc(2)} ><h1>Double</h1></button>
+      <button onClick={()=>Addfunc(2)} ><h1>Double</h1></button>
       </div>
   );
 }
