@@ -2,7 +2,7 @@ import logo from './logo.svg';
 import React from "react"
 import './App.css';
 
-// import {Task} from "./Task"
+import {Task} from "./Task"
 
 function App() {
   const [counter,setCounter]=React.useState(0);
@@ -30,10 +30,10 @@ function App() {
         <button className='btn' onDoubleClick={()=> IncrementValue(-2)}onClick={() => IncrementValue(-1)}>-</button>
         <div>counter is { counter %2===0 ?"Even":"Odd"}</div>
       </header>
+    </div>,
+    <div>
+        <Task/>
     </div>
-    // <div>
-    //     <Task/>
-    // </div>
   );
 }
 
