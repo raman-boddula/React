@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import { MakeList } from './components/MakeList';
 
 function App() {
   let mOs = ["Android", "Iphone", "BlackBerry", "Microsoft Windows Phone"];
@@ -8,12 +9,11 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" width={100}/>
-        <h1>hello</h1>
+        {/* <h1>hello</h1> */}
         <h3>Mobile Operating System</h3>
         <ul className="list">
           {
             mOs.map(el =>  
-              // <li>{el}</li>,
               <MakeList name={el }/>
           )}
         </ul>
@@ -23,22 +23,9 @@ function App() {
             manufacturers.map(el => <li>{el}</li>)
          }
         </ul>
-        {/* <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p> */}
-        {/* <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a> */}
       </header>
     </div>
   );
 }
-function MakeList({name}) {
-  return <li>{name}</li>
-}
+
 export default App;
