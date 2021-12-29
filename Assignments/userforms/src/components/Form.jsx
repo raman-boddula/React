@@ -1,5 +1,4 @@
 import React from "react";
-
 const initState = {
     username: "",
     age: "",
@@ -9,8 +8,8 @@ const initState = {
     profile_pic: "",
     address :""
 }
-export const Form = ({handleData}) => {
-    const [form, setForm] = React.useState(initState);
+export const Form = ({handleDelete}) => {
+    const [form, setForm] = React.useState(initState)
     const ref= React.useRef(null)
     const handleChange = (e) => {
         let { name, value, checked, type } = e.target;
@@ -21,7 +20,12 @@ export const Form = ({handleData}) => {
         e.preventDefault();
         console.log(ref.current.files)
         // console.log(form)
-        handleData(form)
+        fetch("http://localhost:3002/employeData", {
+            method: "POST",
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(form)
+        })
+        handleDelete(Math.random(10)*1000)
     };
     const { username, age, address, marital_status, department, profile_pic, salary } = form;
     return (
@@ -35,6 +39,7 @@ export const Form = ({handleData}) => {
             <input type="text" onChange={handleChange} name="address" value={address} placeholder="enter your Address" /><br/>
             <label>Department</label>
             <select name="department" value={department} onChange={handleChange} >
+                <option></option>
                 <option value="IT">IT</option>
                 <option value="Non-IT">Non-IT</option>
             </select><br></br>

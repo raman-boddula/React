@@ -1,0 +1,24 @@
+{
+  "employeData": [
+    {
+      "username": "raman",
+      "age": "22",
+      "salary": "1200000",
+      "marital_status": true,
+      "department": "IT",
+      "profile_pic": "C:\\fakepath\\Screenshot from 2021-12-23 21-15-35.png",
+      "address": "hyderabad",
+      "id": 1
+    },
+    {
+      "username": "pandu",
+      "age": "22",
+      "salary": "1500000",
+      "marital_status": "",
+      "department": "Non-IT",
+      "profile_pic": "C:\\fakepath\\Screenshot from 2021-12-24 17-37-30.png",
+      "address": "karimnagar",
+      "id": 2
+    }
+  ]
+}

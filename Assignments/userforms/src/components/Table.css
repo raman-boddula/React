@@ -11,3 +11,18 @@ thead{
     background-color:black;
     color:cyan;
 }
+.btn{
+    color:rgb(19, 75, 230);
+    padding:10px;
+    margin-left:49%;
+    font-weight:bolder;
+}
+.page{
+    margin-left: 50.5%;
+}
+.btn1 {
+    color: rgb(19, 75, 230);
+    padding: 10px;
+    margin-left: 1%;
+    font-weight: bolder;
+}
