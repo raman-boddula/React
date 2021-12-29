@@ -7,7 +7,7 @@ import { Tabledata } from './Tabledata';
 export const Parent = () => {
     const [data, setData] = React.useState([]);
     const handleData = (newData) => {
-        console.log('newData', newData);
+        // console.log('newData', newData);
         newData = { ...newData, id: nanoid(8) };
         setData([...data, newData]);
     }

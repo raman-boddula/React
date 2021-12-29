@@ -5,13 +5,19 @@ table,th,td{
   border:1px solid black;
   padding:5px;
 }
+.formDiv  label{
+  margin-right: 20px;
+}
+
 .formDiv{
   justify-content: center;
+  width: 50%;
   text-align: left;
-  margin-left:40%;
-  background-color: aliceblue;
+  margin-left:25%;
+  background-color: rgb(143, 193, 236);
   display: inline-block;
-  line-height: 30px;
+  line-height: 35px;
+  padding:20px
 }
 .App-logo {
   height: 40vmin;

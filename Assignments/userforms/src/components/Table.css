@@ -7,3 +7,7 @@ table{
 td{
     padding:10px;
 }
+thead{
+    background-color:black;
+    color:cyan;
+}

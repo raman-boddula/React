@@ -1,6 +1,6 @@
 import React from 'react';
 import './Table.css'
-export const Tabledata = ({address, username,department,age,salary,marital_status,profile_pic}) => {
+export const Tabledata = ({ address, username, department, age, salary, marital_status, profile_pic }) => {
     return (
         <>
             <tbody >
@@ -10,8 +10,8 @@ export const Tabledata = ({address, username,department,age,salary,marital_statu
                     <td style={{"text-align":"center","width":"15%"}}>{address}</td>
                     <td style={{"text-align":"center","width":"15%"}}>{salary}</td>
                    <td style={{"text-align":"center","width":"15%"}}>{department}</td>
-                 <td style={{"text-align":"center","width":"15%"}}>{marital_status}</td>
-                 <td style={{"text-align":"center","width":"15%"}} >{profile_pic}</td>
+                 <td style={{"text-align":"center","width":"15%"}}>{marital_status ? "Married":"Single"}</td>
+                 <td style={{"text-align":"center","width":"15%"}} >  {profile_pic}</td>
                 </tr>
             </tbody>
         </>
