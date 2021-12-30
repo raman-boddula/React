@@ -1,6 +1,5 @@
 # Getting Started with Create React App
 
-### json-server db.json --port 3002 --watch
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

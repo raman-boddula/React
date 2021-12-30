@@ -1,24 +1,34 @@
 {
   "employeData": [
     {
-      "username": "raman",
-      "age": "22",
+      "username": "pandu",
+      "age": "23",
       "address": "hyderabad",
       "department": "IT",
+      "salary": "2000000",
+      "marital_status": true,
+      "profile_pic": "blob:http://localhost:3000/a1e2a9ed-07ae-4e8f-bef4-5d8adfa13437",
+      "id": 2
+    },
+    {
+      "username": "raman",
+      "age": "22",
+      "address": "Karimanagar",
+      "department": "Non-IT",
       "salary": "1500000",
       "marital_status": true,
-      "profile_pic": "blob:http://localhost:3000/dd14ac72-0ef9-46e2-be58-ca01b8fcc59b",
-      "id": 1
+      "profile_pic": "blob:http://localhost:3000/d360a7c2-d0d5-4853-92eb-c5e05f550b65",
+      "id": 3
     },
     {
       "username": "raman-npm",
-      "age": "23",
-      "address": "Hyderabad",
+      "age": "22",
+      "address": "Karimanagar",
       "department": "Non-IT",
-      "salary": "15000000",
-      "marital_status": false,
-      "profile_pic": "blob:http://localhost:3000/d70b3f2e-5639-4eb8-baed-cb9ffd369963",
-      "id": 2
+      "salary": "1000000",
+      "marital_status": true,
+      "profile_pic": "blob:http://localhost:3000/4e7b7d05-20a9-4657-b1af-18b63dfc882f",
+      "id": 4
     }
   ]
 }
