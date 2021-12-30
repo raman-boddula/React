@@ -8,7 +8,8 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        {show ? <Counter />:null}
+        <Counter />
+        {show ? <Counter/>:null}
         <button onClick={()=>setShow(!show)}>{show ? "Hide" : "show"}</button>
       </header>
     </div>

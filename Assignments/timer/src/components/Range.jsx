@@ -6,15 +6,16 @@ export const Range = () => {
     const [start, setStart] = React.useState(0);
     const [end, setEnd] = React.useState(0);
     const [value, setValue] = React.useState(false);
+    
     const setChange = (e) => {
         const { name, value } = e.target;
         name === "start" ? setStart(value) : setEnd(value);
     }
     const setRange = (e) => {
-       if(!start||!end) return (<h5>Please enter a valid start end end point</h5>)
         setValue(!value)
-        console.log('start and end', start, end)
-        return(<Timer start={start} end={end} />)
+        console.log('start and end', start, end);
+        
+        return(<Timer start={start} end={end}  /> )
     }
 
     return (
