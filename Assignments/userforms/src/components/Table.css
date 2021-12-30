@@ -4,6 +4,11 @@ table{
     text-align: center;
     justify-content: center;
 }
+.imgSet
+{
+    width:70%;
+    margin-left: 15%;
+}
 td{
     padding:10px;
 }

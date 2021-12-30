@@ -3,12 +3,22 @@
     {
       "username": "raman",
       "age": "22",
-      "salary": "1500000",
-      "marital_status": "",
+      "address": "hyderabad",
       "department": "IT",
-      "profile_pic": "C:\\fakepath\\Screenshot from 2021-12-23 19-56-39.png",
-      "address": "karimnagar",
+      "salary": "1500000",
+      "marital_status": true,
+      "profile_pic": "blob:http://localhost:3000/dd14ac72-0ef9-46e2-be58-ca01b8fcc59b",
       "id": 1
+    },
+    {
+      "username": "raman-npm",
+      "age": "23",
+      "address": "Hyderabad",
+      "department": "Non-IT",
+      "salary": "15000000",
+      "marital_status": false,
+      "profile_pic": "blob:http://localhost:3000/d70b3f2e-5639-4eb8-baed-cb9ffd369963",
+      "id": 2
     }
   ]
 }

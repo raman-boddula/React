@@ -22,7 +22,7 @@ export const Tabledata = ({handleDelete, id,address, username, department, age, 
                     <td style={{"text-align":"center","width":"15%"}}>{salary}</td>
                    <td style={{"text-align":"center","width":"15%"}}>{department}</td>
                  <td style={{"text-align":"center","width":"15%"}}>{marital_status ? "Married":"Single"}</td>
-                 <td style={{"text-align":"center","width":"15%"}} >  {profile_pic}</td>
+                    <img className="imgSet" src={profile_pic} alt="profile_pic" />
                     <td style={{ "text-align": "center", "width": "8%" }} > <button onClick={()=>remove(id)} >DELETE</button>
                     </td>    
                 </tr>
