@@ -8,8 +8,8 @@ export const Parent = () => {
     const [data, setData] = React.useState([]);
     const [page, setPage] = React.useState(1);
     const [totalData, setTotalData] = React.useState([]);
-    const [change, setChange] = React.useState(0);
-    const [sortData, setSortData] = React.useState([]);   
+    const [change, setChange] = React.useState(0);  
+    const [sortData, setSortData] = React.useState([]);
     const handleDelete = (x) => {
         setChange(x);
     }
