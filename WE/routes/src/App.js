@@ -7,6 +7,7 @@ import { About } from "./components/About";
 import { Products } from "./components/Products"
 import { Users } from "./components/Users";
 import {UserDetails } from "./components/UserDetails";
+import {Login } from "./components/Login";
 function App() {
   return (
     <div className="App">
@@ -17,6 +18,7 @@ function App() {
         <Route path="/contactus" element={<Contact />}></Route>
         <Route path="/products/:id/product/:name" element={<Products />}></Route>   
         <Route path="/users" element={<Users />}></Route>
+        <Route path="/login" element={<Login />}></Route>
         <Route path="/admin" element={<div>admin page</div>}></Route>
         <Route path="*" element={<div>404 not found</div>}></Route>
         <Route path="/users/:userid" element={<UserDetails />}></Route>
